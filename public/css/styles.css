@@ -1,0 +1,35 @@
+/* ENG: Font */
+/* FR: Police */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*body*/
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: #131639;
+    color: #F5F7F9;
+}
+
+/* ENG: Main menu */
+/* FR: Menu principal */
+.main-navbar .main-navbar-logo{
+    width: 32px;
+    margin-right: 16px;
+}
+
+
+/* ENG: Home page */
+/* FR: Page d'accueil */
+.jill-cover{
+    background-image: url("../images/cover-jill.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+}
+h1{
+    font-family: 'Resident Evil','Poppins',sans-serif;
+    font-size: 4rem;
+}
+.home-page-h2{
+    font-family: 'Resident Evil','Poppins',sans-serif;
+    font-size: 3rem;
+}

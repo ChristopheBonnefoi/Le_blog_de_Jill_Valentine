@@ -1,0 +1,238 @@
+{# ENG: Using the base.html.twig page skeleton #}
+{# FR: Utilisation du squellette de la page base.html.twig #}
+{% extends "base.html.twig" %}
+
+{# ENG: Page title #}
+{# FR: Titre de la page #}
+{% block title %}Accueil{% endblock %}
+
+{# ENG: Content of the page #}
+{# FR: Contenu de la page #}
+{% block body %}
+
+    {# ENG: Bootstrap Grid #}
+    {# FR: Grille Bootstrap #}
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="header-logo col-12 d-flex justify-content-center align-items-center my-3">
+            {# ENG: image for h1#}
+            {# FR: Image pour le h1 #}
+                <div >
+                    <img src="{{ asset('images/header-logo-home-page.png') }}" alt="">
+                </div>
+
+                {# ENG: Display of the site title in the h1 #}
+                {# FR: Affichage du titre du site dans le h1 #}
+                <h1 class="text-center mx-4 my-2 pt-5">{{ site_name }}</h1>
+            </div>
+        </div>
+
+        {# ENG: Top content of the site #}
+        {# FR: Contenue de tête du site #}
+        <div class="row">
+
+            <h2 class="text-center col-12 my-4 home-page-h2">Bienvenue sur mon blog</h2>
+
+            <p class="col-12 col-md-10 mx-auto text-center">Salut je suis Jill Valentine, je fais partie des survivants de l’explosion de Raccoon City en 1998 ou je faisais partie des S.T.A.R.S. qui ont aujourd’hui disparu. J’ai survécu au manoir Spencer avec mes amis Chris Redfield, Barry Burton, Rebecca Chambers et Brad Vickers. À partir de là ce fut le début d’une guerre entre nous et Umbrella. J’ai été prise en chasse par le Nemesis une créature crée par Umbrella qui était programmé pour tuer tous les membres des S.T.A.R.S encore en vie tout le monde était déjà parti sauf Brad et moi, j’ai perdu Brad lors de notre fuite. Après la destruction de Raccoon City les agissements d’Umbrella fut mis au grand jour et l’entreprise fût démantelé, mais c’est pas pour autant que notre combat était fini des membres d’Umbrella continuait leurs agissements en secret et certaine arme biologique fut vendu au marché noir. Chris, Barry et moi avons décidé de rejoindre le B.S.A.A. une organisation fondée par la Federation of Pharmaceutical Companies à la demande des États-Unis. Officiellement soutenu par les Nations Unies, leur but principal est de combattre, prévenir et exterminer le bio-terrorisme, grâce à ça nous avons pu retrouver la trace de Wesker ex-capitaine des S.T.A.R.S. qui nous a trahis au manoir Spencer en 1998 pour se servir de nous comme cobaye de test contre ces armes biologiques qui se sont retrouvées par accident libérer, il travaillait pour Umbrella et maintenant il travaillait pour Tricell. Nous l’avons poursuivi avec Chris et une fois ça retrouver trace nous l’avons suivi dans un autre manoir de Messieurs Spencer un combat acharner s’en est suivi et je suis tombé dans un ravin avec Wesker. Laisser pour morte pendant un certain temps Chris m’a retrouvé en Afrique et a mis fin au jour de Wesker. Depuis ce temps ? Je reste tapis dans l'ombre et aujourd'hui j'ai décidé de vous conter mes aventures et partagé mes expériences sur ce blog. Prends un café pose toi et lis mes aventures. En espérant qu'elle te plaise...</p>
+
+        </div>
+
+        {# ENG: Display of the fixed image in a banner #}
+        {# FR: Affichage de l'image fixe en bandeau #}
+        <div class="jill-cover row my-5"></div>
+
+        {# TODO: A remplacer par de vrai articles #}
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi doloribus et facilis fugit illo sapiente
+            voluptatum. Aliquam aperiam delectus deserunt dolore, excepturi illum labore nam, officia quidem quo
+            repellendus rerum!
+        </div>
+        <div>Beatae, consequuntur ea eaque fugiat illum nesciunt odio perspiciatis possimus praesentium quae quibusdam
+            quisquam quod ratione reiciendis sed? Aspernatur doloribus esse id nisi odio perspiciatis porro tenetur
+            totam vel velit.
+        </div>
+        <div>Amet quibusdam similique sint? Ab eius magnam neque rem. Consequatur facere quidem tempore. Adipisci atque
+            culpa cum, doloremque dolores facere ratione rerum soluta unde? Assumenda earum est nulla sed voluptates!
+        </div>
+        <div>Accusantium adipisci alias architecto, atque deserunt harum inventore minus neque obcaecati praesentium
+            quasi quia quidem quod tempore veniam? Amet beatae delectus iste laudantium maiores mollitia necessitatibus,
+            obcaecati reiciendis voluptates voluptatum.
+        </div>
+        <div>Accusamus illum inventore iusto nihil nulla odit, optio quos reiciendis repudiandae sapiente ut velit
+            voluptas. Aut dolore fugit impedit ipsam labore recusandae, suscipit tenetur? Beatae laborum qui quos
+            recusandae sapiente!
+        </div>
+        <div>Dolor dolore maiores nemo, nobis optio sequi. Amet aspernatur, dignissimos distinctio, dolores, eos error
+            esse facere laborum nisi quia recusandae rem saepe sapiente soluta velit! Facere maiores nemo odio sit.
+        </div>
+        <div>Ad consequatur delectus deserunt ducimus facilis ipsa necessitatibus, obcaecati officiis possimus
+            provident, quod, repellat veritatis voluptate. Cupiditate delectus, earum eius et excepturi illo itaque nemo
+            nesciunt obcaecati quos sapiente, voluptatibus?
+        </div>
+        <div>Dolor eos iste, nostrum pariatur possimus sequi sunt tempore vero. Ab deserunt dolores eos explicabo, ipsam
+            natus optio tempora. Beatae fugit laudantium natus! Autem earum nobis optio quam quidem veniam?
+        </div>
+        <div>Atque doloribus eaque laborum officia perspiciatis sit vel voluptate? Alias aperiam atque consequatur
+            deleniti deserunt, distinctio dolore doloremque doloribus eius error fugit magnam magni odit officia quas
+            sapiente temporibus voluptates.
+        </div>
+        <div>Alias amet consequatur deleniti dolor dolore dolores ea eum facere illum inventore ipsum iure laborum
+            libero minus nisi odit praesentium quasi quia quisquam quos, reprehenderit sequi sit tempore temporibus
+            veritatis.
+        </div>
+        <div>Aspernatur blanditiis delectus dolor dolorem ducimus enim esse excepturi harum ipsam labore minus molestias
+            nobis non nostrum odit officiis omnis, quo quos, saepe sapiente sed suscipit voluptates! Enim repudiandae,
+            voluptatum.
+        </div>
+        <div>Architecto doloribus dolorum itaque nesciunt sed. Cumque et illo nulla sequi ullam veniam vero
+            voluptatibus. Amet asperiores, commodi deserunt est et magni, nihil officiis repellat repellendus sint,
+            suscipit tempore voluptas.
+        </div>
+        <div>Dolores, sequi, tempore? A accusamus ad assumenda distinctio dolore eaque et illum laborum nemo officiis
+            quam quibusdam saepe sint soluta tenetur, unde ut voluptates. Commodi dolore dolorum incidunt nisi
+            repudiandae.
+        </div>
+        <div>Autem ducimus exercitationem pariatur perspiciatis repudiandae. A animi consequuntur deleniti eaque error
+            ex, expedita, explicabo harum hic id inventore molestias natus nostrum pariatur perferendis quam quod quos
+            repudiandae velit voluptate.
+        </div>
+        <div>Ab ad amet assumenda consectetur dolore dolorem dolores dolorum eveniet, exercitationem facere fugit, ipsum
+            itaque laborum laudantium necessitatibus nesciunt numquam possimus qui quo quod rerum suscipit tempora ullam
+            velit voluptates.
+        </div>
+        <div>Ab, aliquid animi assumenda corporis culpa deleniti distinctio ex, explicabo illo ipsa laborum magni maxime
+            natus numquam pariatur porro quam quas quasi qui quia quis reprehenderit sed velit veniam voluptate.
+        </div>
+        <div>Commodi cumque eligendi est explicabo fuga id illo inventore iste iusto libero maiores nihil nobis
+            reprehenderit vel, voluptatibus. Animi aut consectetur corporis dolore, dolores doloribus itaque labore
+            laboriosam perferendis veritatis!
+        </div>
+        <div>A amet at atque commodi doloribus eius error est exercitationem fugit inventore ipsam labore laudantium
+            minima molestiae molestias, nihil nostrum pariatur perferendis provident quidem quisquam sapiente sunt,
+            tempore velit voluptatum?
+        </div>
+        <div>Deleniti illo minima perferendis, qui quod tempora veniam vero voluptatum. Ab, accusamus aliquid assumenda
+            commodi dolor eos labore minima, nam nihil nostrum possimus provident saepe sequi suscipit temporibus unde
+            vel?
+        </div>
+        <div>Aperiam aut beatae commodi cupiditate debitis dicta dignissimos, ducimus eos esse eum fuga id magni nobis
+            officia possimus quasi quia quibusdam quidem tempore totam. Adipisci aut fugit illo molestias vel?
+        </div>
+        <div>Dignissimos error fugit in itaque, modi optio quae reprehenderit temporibus. Adipisci, aspernatur
+            blanditiis consequatur dicta doloremque ducimus exercitationem facere hic libero, magnam, magni maxime optio
+            saepe ut voluptas. Aliquid, excepturi!
+        </div>
+        <div>Architecto blanditiis cupiditate eum expedita incidunt laudantium nostrum nulla obcaecati quidem quos.
+            Cupiditate doloribus ducimus exercitationem fugit labore officia quam, qui quos tempora. Consectetur
+            corporis facilis harum libero maxime molestias!
+        </div>
+        <div>Autem impedit placeat ratione recusandae reiciendis, rerum tenetur voluptas? Dignissimos incidunt minus qui
+            quia tenetur! Ad assumenda deleniti dolor harum libero neque omnis porro, possimus quis repellat veritatis
+            vitae voluptates.
+        </div>
+        <div>A assumenda consectetur dicta ducimus eius fuga fugiat id impedit ipsam magnam minus molestiae natus
+            nesciunt odio placeat quae quia quidem similique sunt tempora temporibus, ut veniam vero voluptatem
+            voluptatibus!
+        </div>
+        <div>Dicta dolores error eveniet illo perferendis quaerat repellendus velit. Blanditiis ea molestiae non
+            placeat, quas recusandae vitae? A aliquam delectus deleniti eum inventore nam non, recusandae tempore
+            tenetur, ut voluptate.
+        </div>
+        <div>Accusamus at consequatur culpa esse eum fugiat ipsum iusto labore laborum nulla, quam rerum saepe sed
+            soluta tempora veritatis vitae! Deserunt dolor itaque neque optio placeat. Distinctio error id nostrum.
+        </div>
+        <div>Consectetur eaque laudantium minima molestiae, molestias mollitia nihil non nulla quia suscipit? Atque aut
+            autem debitis dicta doloribus ea eius enim exercitationem fugiat inventore, molestias nisi pariatur quas
+            quia ratione!
+        </div>
+        <div>A accusantium aliquid, blanditiis consectetur cupiditate delectus dignissimos, distinctio dolorem doloribus
+            eligendi enim error esse explicabo fuga illum iusto laborum nam neque nesciunt nisi numquam, odio quam
+            ratione vel vero.
+        </div>
+        <div>Ad aliquam amet culpa eaque eligendi exercitationem explicabo hic, itaque laudantium libero minima optio,
+            quae totam. Delectus earum explicabo facere fuga inventore minus necessitatibus nulla quae qui sint,
+            suscipit voluptas.
+        </div>
+        <div>Accusamus ad aut corporis deleniti et expedita illum iste libero nesciunt nihil quo reprehenderit,
+            sapiente! Dignissimos eius expedita facilis, iusto minima non numquam odit repudiandae sed similique tempore
+            veniam, voluptatibus!
+        </div>
+        <div>Ab cum dignissimos fuga neque pariatur possimus suscipit. Alias assumenda atque, consectetur consequuntur
+            dolorem eaque fugiat in incidunt, ipsa labore libero, nostrum placeat quibusdam repudiandae sapiente unde
+            vitae voluptate voluptatibus.
+        </div>
+        <div>Accusamus atque commodi consequatur, cum enim ex maiores mollitia necessitatibus nemo neque, nobis nulla
+            obcaecati pariatur rem rerum tenetur ullam. Atque distinctio dolorem id laudantium necessitatibus nihil
+            omnis similique voluptatibus.
+        </div>
+        <div>Consequuntur excepturi possimus recusandae veritatis voluptatem. Aliquam fugiat non nulla. At, ducimus,
+            velit! Ab at blanditiis consectetur dolor, eos explicabo magni quae quis reprehenderit sapiente sint sit,
+            temporibus unde voluptatem!
+        </div>
+        <div>Ab culpa dicta ducimus eaque eligendi eos fugit illo ipsa maiores, neque odio perferendis porro praesentium
+            quia quod repudiandae sed. Accusamus debitis, facilis itaque natus nihil provident rem totam ullam!
+        </div>
+        <div>Adipisci commodi dignissimos id ipsam nisi perspiciatis possimus quidem rem, veniam voluptates. Aliquid
+            aperiam dignissimos facilis fuga, ipsum maiores molestiae necessitatibus obcaecati perferendis quibusdam
+            quidem sint suscipit vero voluptate voluptates.
+        </div>
+        <div>Alias architecto, asperiores at culpa dolor dolorem harum inventore ipsam, ipsum itaque laudantium maxime
+            neque nesciunt obcaecati quas sapiente sint ullam veniam! Atque fuga laudantium maiores quibusdam
+            repellendus! Dolores, reiciendis.
+        </div>
+        <div>Aliquam aliquid, asperiores autem blanditiis consequatur corporis dicta dolor est eveniet excepturi facere,
+            harum id ipsa iusto, laudantium modi nam natus non obcaecati officia officiis repellat tempore tenetur ullam
+            unde?
+        </div>
+        <div>Deserunt distinctio error, excepturi exercitationem fugiat impedit in laborum minus molestias nihil
+            obcaecati quisquam quo, quos repellat sint soluta totam? Animi cum distinctio harum totam! Amet itaque
+            molestias suscipit veritatis!
+        </div>
+        <div>Neque quibusdam rem sapiente soluta sunt totam velit. Animi corporis debitis error illo ipsa magnam nihil
+            quas vel? At, corporis cupiditate fugit inventore neque sint unde. Consequatur eius ullam voluptate.
+        </div>
+        <div>Dignissimos dolore, eligendi esse et eveniet facere facilis incidunt magnam maiores nisi optio quaerat rem!
+            Dolor fugiat nisi qui sapiente? Beatae debitis delectus eos ipsam nemo, quis quo suscipit vel!
+        </div>
+        <div>Atque ea eum facilis illum maxime neque, odit placeat possimus quibusdam quisquam quos ratione repellendus
+            soluta sunt tempore temporibus velit veritatis. Aliquid dolor in itaque nisi quas quis saepe voluptatibus?
+        </div>
+        <div>Ad aperiam consequuntur inventore officiis quia? Adipisci assumenda commodi corporis deserunt excepturi
+            illo, in ipsa, itaque laborum modi neque numquam provident quidem quis similique sit tempora tempore ullam,
+            unde veritatis!
+        </div>
+        <div>A fuga ipsam mollitia, quas sapiente similique? Accusamus alias, amet, at atque dolor doloremque eos
+            excepturi facere incidunt maxime molestias neque nisi, obcaecati odit perspiciatis provident quas reiciendis
+            sapiente veniam.
+        </div>
+        <div>Est, quas sequi. Ab aliquid animi asperiores cumque delectus distinctio, ea eius eligendi, enim eum
+            exercitationem fugit harum ipsa optio provident recusandae rem tempora temporibus tenetur vitae! Corporis,
+            culpa, voluptatem?
+        </div>
+        <div>Aliquid consequatur cum, cupiditate deleniti eaque explicabo illo impedit ipsum laboriosam magni maiores
+            necessitatibus obcaecati qui quibusdam ratione tenetur totam ullam unde. A fugit illo libero nobis sit,
+            suscipit voluptatum?
+        </div>
+        <div>Commodi dolorem ex libero minima! Animi commodi dignissimos dolor doloribus eius illum iste laboriosam nemo
+            nesciunt nisi, quia quibusdam quidem rem tempora tenetur totam, vel. Consequuntur esse explicabo quas
+            voluptates.
+        </div>
+        <div>Accusantium distinctio expedita facere fuga illum iusto maxime officia porro vero voluptatum? At dolorem
+            iste magnam molestiae quibusdam quisquam quo, ratione recusandae repellendus repudiandae, suscipit
+            voluptatem? Aperiam nam nesciunt quae!
+        </div>
+        <div>Aliquid at, autem dolorum error esse hic magni nihil nobis nulla numquam quis repellat sapiente sed sint
+            tenetur unde vero! Hic id iusto molestias natus saepe. Eligendi in magnam quasi!
+        </div>
+        <div>A accusantium aut culpa delectus dolorem dolorum, earum excepturi explicabo itaque iure nemo provident
+            quasi quia quis quisquam repellat totam ullam veritatis voluptas voluptatibus. Blanditiis culpa cumque in
+            modi rem!
+        </div>
+        <div>Accusamus debitis eveniet ratione! Autem consequuntur cum dolore doloribus eaque earum eligendi error
+            exercitationem hic impedit inventore ipsum iure magnam modi optio perspiciatis placeat, possimus quia
+            recusandae repellat similique totam.
+        </div>
+    </div>
+
+{% endblock %}
