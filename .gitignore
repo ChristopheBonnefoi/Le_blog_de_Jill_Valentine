@@ -17,4 +17,5 @@
 /migrations/*.php
 /public/images/profils/*
 !public/images/profils/.gitignore
+/docs/
 ###< exclusion personnel ###

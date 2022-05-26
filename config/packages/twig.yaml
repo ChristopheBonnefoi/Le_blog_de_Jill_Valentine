@@ -1,6 +1,16 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
 
+    #TODO: inclusion du theme boostrap 5 pour les formulaire
+
+    globals:
+
+        # ENG: Name of the site
+        # FR: Nom du site
+        site_name: 'Le Blog de Jill Valentine'
+
+        #TODO: Récuperation Recaptcha pour sservices.yaml
+
 when@test:
     twig:
         strict_variables: true
