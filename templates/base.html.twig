@@ -1,19 +1,46 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+{# ENG: Twig variable containing the name of the current route for the menu #}
+{# FR: Variable Twig contenant le nom de la route actuelle pour le menu #}
+{% set route = app.request.attributes.get('_route') %}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {# ENG: Display of the title of the view on the page with a "title" block, with the name of the site next to it #}
+    {# FR: Affichage du titre de la vue sur la page avec un block "title", avec le nom du site à côté #}
+    <title>{% block title %}{% endblock %} - {{ site_name }}</title>
+    {# ENG: Font-Awesome Inclusion #}
+    {# FR: Inclusion Font-Awesome #}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    {# ENG: CSS Bootstrap Inclusion #}
+    {# FR: Inclusion CSS Bootstrap #}
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    {# ENG: Include Custom Styles #}
+    {# FR: Inclusion Styles perso #}
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    {# ENG: Block to add additional CSS files #}
+    {# FR: Bloc pour ajouter des fichiers CSS additionnels #}
+    {% block css %}{% endblock %}
+</head>
+<body>
+    {# ENG: Include main menu #}
+    {# FR: Inclusion du manu principal #}
+    {% include 'partials/_main_navbar.html.twig' %}
+
+    {# ENG: Inclusion of the display of "success" and "error" type flash messages #}
+    {# FR: Inclusion de l'affichage des messages flashes de type "success" et "error" #}
+    {% include 'partials/_flashes.html.twig'%}
+
+    {# ENG: Block for displaying page content #}
+    {# FR: Bloc pour l'affichage du contenue des pages #}
+    {% block body %}{% endblock %}
+
+    {# ENG: JS Bootstrap include #}
+    {# FR: Inclusion JS Bootstrap #}
+    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
 </html>
